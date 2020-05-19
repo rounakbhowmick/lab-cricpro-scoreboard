@@ -1,16 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 /* Type your code here */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgba(255, 252, 252, 0.726);
+	margin-left: 4rem;
+	font-family: 'Roboto',
+		sans-serif;
+	height: 100%;
+}
+
+/*Navbar*/
+#navbar {
+	display: flex;
+	width: 100%;
+	height: 20%;
+	padding-top: 1.5rem;
+	padding-right: 2.3rem;
+
+
+	justify-content: flex-end;
+
+}
+
+.logo {
+	width: 12rem;
+	height: 3.1rem;
+	padding-right: 1rem;
+}
+
+/*Header */
+
+.l-heading {
+	font-size: 1.5rem;
+	font-weight: 100;
+	color: black;
+	text-shadow: 3px 3px rgba(146, 133, 133, 0.438);
+	letter-spacing: 0.05rem;
+}
+
+.m-heading {
+	color: grey;
+}
+
+/*Innings Section*/
+.table {
+	display: grid;
+	width: 70%;
+	position: absolute;
+	top: 12rem;
+	background: rgba(255, 255, 255, 0.945);
+	z-index: 1;
+
+}
+
+.batsman-heading,
+.batsman,
+.addition,
+.did_not_bat {
+	display: grid;
+	padding: 0.7rem;
+	border-bottom: 0.1rem solid rgba(128, 128, 128, 0.596);
+
+}
+
+.batsman div:first-child,
+.did_not_bat div:nth-child(2) {
+	color: rgb(59, 159, 206);
+	font-family: 'Times New Roman',
+		Times,
+		serif;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.batsman div:nth-child(2) {
+	color: grey;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+}
+
+.innings-heading {
+	display: grid;
+	padding: 1rem;
+	grid-template-columns: 15fr 2fr;
+	background-color: #f05316;
+	color: white;
+}
+
+.batsman-heading {
+	grid-template-columns: 16fr 2fr 2fr 2fr 2fr 2fr;
+}
+
+.batsman {
+	grid-template-columns: 8fr 8fr 2fr 2fr 2fr 2fr 2fr;
+}
+
+.addition {
+	grid-template-columns: 16fr 10fr;
+}
+
+.did_not_bat {
+	grid-template-columns: 8fr 18fr;
+}
+
+.notbat {
+	display: flex;
+}
+
+.background {
+	width: 56.5rem;
+	height: 37rem;
+	margin-left: 24rem;
+	z-index: -1;
+}
+
+/*Popup */
+#playerid {
+	position: absolute;
+	width: fit-content;
+	height: fit-content;
+	z-index: 2;
+	top: 18rem;
+	left: 18rem;
+}
+
+.opacity {
+	opacity: 0.3;
+}
+
 
 
 /* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
+.footer {
+	position: absolute;
+	top: 45rem;
+
 }
